@@ -27,6 +27,7 @@ $(document).ready(function() {
   var deck = shuffle(deckUnshuffled);
   
   for (i=0; i < 4; i++) {
-    $('#' + deck[i]).fadeIn(100);
+    var currentCard = '#' + deck[i];
+    $(currentCard).fadeIn(100);
   }
 });
