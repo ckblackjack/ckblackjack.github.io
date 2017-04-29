@@ -28,6 +28,6 @@ $(document).ready(function() {
   
   for (i=0; i < 4; i++) {
     var currentCard = '#' + deck[i];
-    $(currentCard).fadeIn(100);
+    $(currentCard).show();
   }
 });
