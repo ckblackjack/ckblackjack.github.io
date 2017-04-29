@@ -24,6 +24,9 @@ $(document).ready(function() {
     '10S', 'JC', 'JD', 'JH', 'JS', 'QC', 'QD', 'QH', 'QS', 'KC', 'KD', 'KH', 'KS'
   ];
   
+  var y = 'li'
+  $(y).hide();
+  
   var deck = shuffle(deckUnshuffled);
   
   for (i=0; i < 4; i++) {
