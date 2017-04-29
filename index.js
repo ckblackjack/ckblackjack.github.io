@@ -23,7 +23,7 @@ var deckUnshuffled = [
   '10S', 'JC', 'JD', 'JH', 'JS', 'QC', 'QD', 'QH', 'QS', 'KC', 'KD', 'KH', 'KS'
 ];
 
-$('li').hide();
+$('.Card').hide();
 
 var deck = shuffle(deckUnshuffled);
 
