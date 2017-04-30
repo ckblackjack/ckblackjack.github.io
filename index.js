@@ -42,5 +42,11 @@ $(document).ready(function() {
   $('#Deal').on('click', function() {
     $('.Back').show();
     $('#' + deck[0]).show();
+    $('#' + deck[1]).appendTo('.Hand');
+    $('#' + deck[2]).appendTo('.Hand');
+    $('#' + deck[1]).show();
+    $('#' + deck[2]).show();
+    $('li').show();
+    $('#Deal').hide();
   });
 });
