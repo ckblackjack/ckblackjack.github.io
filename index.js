@@ -28,6 +28,14 @@ var deck = shuffle(deckUnshuffled);
 $(document).ready(function() {
   $('.Card').hide();
   
+  $('li').mouseenter(function() {
+    $(this).css("opacity", "1");
+  });
+  
+  $('li').mouseleave(function() {
+    $(this).css("opacity", ".75");
+  });
+  
   for (i=0; i < 4; i++) {
     var currentCard = '#' + deck[i];
     $(currentCard).show();
