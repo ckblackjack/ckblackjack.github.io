@@ -28,12 +28,16 @@ var deck = shuffle(deckUnshuffled);
 $('.Card').hide();
 
 $(document).ready(function() {
-  
   $('li').mouseenter(function() {
     $(this).css("opacity", "1");
   });
   
   $('li').mouseleave(function() {
     $(this).css("opacity", ".5");
+  });
+  
+  $('#Deal').on('click', function() {
+    $('.Card Back').show();
+    $(deck[0]).show();
   });
 });
