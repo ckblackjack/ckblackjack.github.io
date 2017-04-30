@@ -26,8 +26,11 @@ var deckUnshuffled = [
 var deck = shuffle(deckUnshuffled);
 
 $('.Card').hide();
+$('li').hide();
 
 $(document).ready(function() {
+  $('#Deal').show();
+  
   $('li').mouseenter(function() {
     $(this).css("opacity", "1");
   });
