@@ -23,11 +23,10 @@ var deckUnshuffled = [
   '10S', 'JC', 'JD', 'JH', 'JS', 'QC', 'QD', 'QH', 'QS', 'KC', 'KD', 'KH', 'KS'
 ];
 
-$('.Card').hide();
-
 var deck = shuffle(deckUnshuffled);
 
 $(document).ready(function() {
+  $('.Card').hide();
   
   for (i=0; i < 4; i++) {
     var currentCard = '#' + deck[i];
