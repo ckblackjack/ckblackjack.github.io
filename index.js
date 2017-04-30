@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
   
   $('#Deal').on('click', function() {
-    $('.Card Back').show();
+    $('.Back').show();
     $('#' + deck[0]).show();
   });
 });
