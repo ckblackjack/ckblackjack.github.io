@@ -34,6 +34,6 @@ $(document).ready(function() {
   });
   
   $('li').mouseleave(function() {
-    $(this).css("opacity", ".75");
+    $(this).css("opacity", ".5");
   });
 });
