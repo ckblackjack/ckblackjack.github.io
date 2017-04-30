@@ -41,6 +41,6 @@ $(document).ready(function() {
   
   $('#Deal').on('click', function() {
     $('.Card Back').show();
-    $(deck[0]).show();
+    $('#' + deck[0]).show();
   });
 });
