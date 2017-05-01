@@ -1,4 +1,32 @@
-
+function getCardValue(card) {
+  if ($('#' + card).hasClass('2')) {
+    return 2;
+  } else if ($('#' + card).hasClass('3')) {
+    return 3;
+  } else if ($('#' + card).hasClass('4')) {
+    return 4;
+  } else if ($('#' + card).hasClass('5')) {
+    return 5;
+  } else if ($('#' + card).hasClass('6')) {
+    return 6;
+  } else if ($('#' + card).hasClass('7')) {
+    return 7;
+  } else if ($('#' + card).hasClass('8')) {
+    return 8;
+  } else if ($('#' + card).hasClass('9')) {
+    return 9;
+  } else if ($('#' + card).hasClass('10')) {
+    return 10;
+  } else if ($('#' + card).hasClass('Jack')) {
+    return 10;
+  } else if ($('#' + card).hasClass('Queen')) {
+    return 10;
+  } else if ($('#' + card).hasClass('King')) {
+    return 10;
+  } else if ($('#' + card).hasClass('Ace')) {
+    return 'Ace';
+  }
+}
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
