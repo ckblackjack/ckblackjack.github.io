@@ -49,4 +49,10 @@ $(document).ready(function() {
     $('li').show();
     $('#Deal').hide();
   });
+  
+  $('#Hit').on('click', function() {
+    var x = 3;
+    $('#' + deck[x]).appendTo('.Hand');
+    $('#' + deck[x]).show();
+  });
 });
