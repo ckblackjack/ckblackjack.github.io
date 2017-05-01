@@ -54,5 +54,6 @@ $(document).ready(function() {
     var x = 3;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
+    x += 1;
   });
 });
