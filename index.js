@@ -1,3 +1,5 @@
+
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -27,6 +29,8 @@ var deck = shuffle(theDeck);
 
 var x = 0;
 
+var downCard = 0;
+
 $('.Card').hide();
 $('li').hide();
 
@@ -43,6 +47,8 @@ $(document).ready(function() {
   
   $('#Deal').on('click', function() {
     $('.Back').show();
+    downCard = deck[x];
+    x += 1;
     $('#' + deck[x]).show();
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
