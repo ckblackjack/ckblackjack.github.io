@@ -102,7 +102,7 @@ $(document).ready(function() {
   $('#Hit').on('click', function() {
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
-    playerCount += getCardValue(deck[x]);
+    newPlayerCount();
     x += 1;
   });
 });
