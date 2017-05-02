@@ -64,7 +64,7 @@ var playerCount = 0;
 $('.Card').hide();
 $('li').hide();
 
-$(document).ready(function() {
+$(document).ready(function() {  
   $('#Deal').show();
   
   $('li').mouseenter(function() {
@@ -77,6 +77,7 @@ $(document).ready(function() {
   
   $('#Deal').on('click', function() {
     $('.Back').show();
+    $('#playerCount').text(playerCount);
     downCard = deck[x];
     x += 1;
     $('#' + deck[x]).show();
