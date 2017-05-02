@@ -59,6 +59,8 @@ var x = 0;
 
 var downCard = 0;
 
+var playerCount = 0;
+
 $('.Card').hide();
 $('li').hide();
 
@@ -81,9 +83,11 @@ $(document).ready(function() {
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
+    playerCount += getCardValue(deck[x]);
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
+    playerCount += getCardValue(deck[x]);
     x += 1;
     $('li').show();
     $('#Deal').hide();
@@ -92,6 +96,7 @@ $(document).ready(function() {
   $('#Hit').on('click', function() {
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
+    playerCount += getCardValue(deck[x]);
     x += 1;
   });
 });
