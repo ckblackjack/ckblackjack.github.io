@@ -28,6 +28,11 @@ function getCardValue(card) {
   }
 }
 
+function newPlayerCount() {
+  playerCount += getCardValue(deck[x]);
+  $('#playerCount').text(playerCount);
+}
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -84,11 +89,11 @@ $(document).ready(function() {
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
-    playerCount += 1;//getCardValue(deck[x]);
+    newPlayerCount();
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
-    playerCount += getCardValue(deck[x]);
+    newPlayerCount();
     x += 1;
     $('li').show();
     $('#Deal').hide();
