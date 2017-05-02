@@ -33,6 +33,16 @@ function newPlayerCount() {
   $('#playerCount').text(playerCount);
 }
 
+function checkIfBusted() {
+  if (playerCount > 21) {
+    bust();
+  }
+}
+/*
+function bust() {
+  $(
+}
+*/
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
