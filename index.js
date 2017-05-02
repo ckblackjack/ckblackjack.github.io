@@ -84,7 +84,7 @@ $(document).ready(function() {
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
-    playerCount += getCardValue(deck[x]);
+    playerCount += 1;//getCardValue(deck[x]);
     x += 1;
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
