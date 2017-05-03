@@ -24,6 +24,7 @@ function getCardValue(card) {
   } else if ($('#' + card).hasClass('King')) {
     return 10;
   } else if ($('#' + card).hasClass('Ace')) {
+    ace += 1;
     return 11;
   }
 }
@@ -34,7 +35,9 @@ function newPlayerCount() {
 }
 
 function checkIfBusted() {
-  if (playerCount > 21) {
+  if (numAce > 0) {
+    playerCount -= numAce * 10
+  } else if (playerCount > 21) {
     bust();
   }
 }
@@ -78,6 +81,8 @@ var x = 0;
 var downCard = 0;
 
 var playerCount = 0;
+
+var numAce = 0;
 
 $('.Card').hide();
 $('li').hide();
