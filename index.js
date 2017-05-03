@@ -38,11 +38,14 @@ function checkIfBusted() {
     bust();
   }
 }
-/*
+
 function bust() {
-  $(
+  $('li').hide();
+  $('.Card').hide();
+  $('p').hide();
+  $('#Deal').show();
 }
-*/
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
