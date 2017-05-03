@@ -37,6 +37,9 @@ function newPlayerCount() {
 function checkIfBusted() {
   if (numAce > 0) {
     playerCount -= numAce * 10
+    if (playerCount > 21) {
+      bust();
+    }
   } else if (playerCount > 21) {
     bust();
   }
