@@ -94,6 +94,7 @@ $(document).ready(function() {
   });
   
   $('#Deal').on('click', function() {
+    playerCount = 0;
     $('.Back').show();
     $('#playerCount').text(playerCount);
     downCard = deck[x];
