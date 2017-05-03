@@ -116,6 +116,7 @@ $(document).ready(function() {
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
     newPlayerCount();
+    checkIfBusted();
     x += 1;
   });
 });
