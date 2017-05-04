@@ -112,8 +112,8 @@ $(document).ready(function() {
   
   $('#Deal').on('click', function() {
     playerCount = 0;
+    playerCount2 = 0;
     $('.Back').show();
-    $('#playerCount').text(playerCount);
     downCard = deck[x];
     x += 1;
     $('#' + deck[x]).show();
@@ -134,6 +134,7 @@ $(document).ready(function() {
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
     newPlayerCount();
+    checkForAce();
     checkIfBusted();
     x += 1;
   });
