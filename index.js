@@ -47,7 +47,7 @@ function checkForAce() {
 }
 
 function checkIfBusted() {
-  if (playerCount > 21) {
+  if (playerCount2 > 21) {
     bust();
   }
 }
@@ -55,7 +55,6 @@ function checkIfBusted() {
 function bust() {
   $('li').hide();
   $('.Card').hide();
-  $('p').hide();
   $('#Deal').show();
 }
 
