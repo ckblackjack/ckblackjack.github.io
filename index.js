@@ -31,19 +31,6 @@ function getCardValue(card) {
 
 function newPlayerCount() {
   playerCount += getCardValue(deck[x]);
-  playerCount2 += getCardValue(deck[x]);
-}
-
-function checkForAce() {
-  if (numAce == 1 && playercount2 > 21) {
-    playerCount2 = playerCount - 10
-  } else if (numAce == 2 && playercount2 > 21) {
-    playerCount2 = playerCount - 20
-  } else if (numAce == 3 && playercount2 > 21) {
-    playerCount2 = playerCount - 30
-  } else if (numAce == 4 && playercount2 > 21) {
-    playerCount2 = playerCount - 40
-  }
 }
 
 function checkIfBusted() {
@@ -90,8 +77,6 @@ var x = 0;
 var downCard = 0;
 
 var playerCount = 0;
-  
-var playerCount2 = 0;
 
 var numAce = 0;
 
@@ -111,7 +96,6 @@ $(document).ready(function() {
   
   $('#Deal').on('click', function() {
     playerCount = 0;
-    playerCount2 = 0;
     $('.Back').show();
     downCard = deck[x];
     x += 1;
@@ -133,7 +117,6 @@ $(document).ready(function() {
     $('#' + deck[x]).appendTo('.Hand');
     $('#' + deck[x]).show();
     newPlayerCount();
-    checkForAce();
     checkIfBusted();
     x += 1;
   });
