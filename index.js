@@ -24,7 +24,7 @@ function getCardValue(card) {
   } else if ($('#' + card).hasClass('King')) {
     return 10;
   } else if ($('#' + card).hasClass('Ace')) {
-    numeAce += 1;
+    numAce += 1;
     return 11;
   }
 }
